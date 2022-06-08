@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/7f3542ed85.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="PerfilInd.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js"
+      integrity="sha512-5m2r+g00HDHnhXQDbRLAfZBwPpPCaK+wPLV6lm8VQ+09ilGdHfXV7IVyKPkLOTfi4vTTUVJnz7ELs7cA87/GMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>Perfil Indigena</title>
+  </head>
+
+  <body>
+
+    <section class="container d-flex mt-3">
+      <section class="millitos container col-xxl-3">
+        <section class="">
+          <section>
+            <article class="col-xxl-12">
+              <h3 class="text-uppercase fw-bold">Wilson Jimnez</h3>
+            </article>
+            <section class="ImgS">
+              <img class="Im" src="img/profile.jpg" alt="Avatar" />
+            </section>
+            <br />
+            <section>
+              <article class="container-fluid">
+                <p class="p">Calificacion: ⭐⭐⭐⭐</p>
+                <p class="p">Age: 23</p>
+                <p class="p">Etnicity: Guayu</p>
+                <p class="p">Ubication: Silvia</p>
+                <p class="p">Occupation: Artisan</p>
+                <p class="p">Location: Cauca</p>
+                <a
+                  class="text-decoration-none text-uppercase fw-bold border"
+                  href="#"
+                >
+                  <p class="m-1">Notificaciones 🔔</p></a
+                >
+              </article>
+            </section>
+          </section>
+         
+          
+          <article class="text-start m-3">
+           
+            <h3>CONOCEME</h3>
+            
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              adipisci ratione suscipit. Animi nobis similique enim assumenda
+              ipsum ipsa officia sit. Vero veniam culpa deserunt commodi ducimus
+              dolor temporibus minima?
+            </p>
+            <br />
+
+            <article class="input-group">
+              <textarea
+                class="form-control"
+                aria-label="With textarea"
+              ></textarea>
+            </article>
+          </article>
+        </section>
+      </section>
+
+      <section class="container justify-content-between">
+        <section class="container-fluid">
+          <canvas id="myChart" width="200" height="100"></canvas>
+        </section>
+        <br />
+
+        <section class="container">
+          <h3 class="text-center">DESEAS SUBIR UNA MANUALIDAD</h3>
+
+          <article class="container d-flex m-4">
+            <section class="container">
+              <h4>¿Necesitas subir tus manualidades?</h4>
+              <p class="text-start m-2">
+                Dandole click al boton "VENDER" puedes subir tus manualidades o
+                artesanias.Te recomendamos fotos de buena calidad para que tu
+                producto se venda mas rapido.
+              </p>
+            
+              <input type="button" name="vender" value="VENDER" />
+            </section>
+
+            <section class="container">
+              <h4>¿Necesitas hacer una subasta?</h4>
+              <p class="text-start m-2">
+                Dandole click al boton "SUBASTAR" podras subastar tu mejor
+                artesania, recuerda el precio inicial lo pones tu.
+              </p>
+        
+              <input type="button" name="subastar" value="SUBASTAR" />
+            </section>
+          </article>
+        </section>
+      </section>
+    </section>
+  </body>
+  <script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var myChart = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: [
+          "Enero",
+          "Febrero",
+          "Marzo",
+          "Abril",
+          "Mayo",
+          "Junio",
+          "Julio",
+          "Agosto",
+          "Septiembre",
+          "Octubre",
+          "Noviembre",
+          "Diciembre",
+        ],
+        datasets: [
+          {
+            label: "Ventas por mes",
+            data: [10, 9, 22, 15, 72, 50, 45, 87, 80, 70, 50, 98],
+            backgroundColor: [
+              "rgb(51, 102, 255)",
+              "rgb(102, 102, 253)",
+              "rgb(230, 0, 0)",
+            ],
+            borderwidth: 2.5,
+          },
+        ],
+      },
+    });
+  </script>
+</html>
